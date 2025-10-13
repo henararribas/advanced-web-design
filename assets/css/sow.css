@@ -1,164 +1,114 @@
-/* ==========================================
-   ESTILOS ESPECÍFICOS - sow.css
-   Layout del reporte de análisis
-   ========================================== */
+/* ===============================
+   sow.css – SOW specific layout
+   =============================== */
 
-/* === HEADER Y NAVEGACIÓN STICKY === */
+/* Header + Sticky nav */
 header {
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #fff;
     padding: 1rem 2rem;
+}
+
+header .main-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin-right: 1rem;
+    gap: 2rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: block;
+    text-transform: lowercase;
+    color: #555;
+}
+nav ul li a:hover {
+    color: #000;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #007acc;
-    outline: none;
+/* Animated cover */
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+.cover-title {
+    font-size: clamp(2rem, 8vw, 5rem);
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
-header h1 {
-    padding: 1rem 2rem;
-    padding-bottom: 0;
-}
-
-/* === SECCIONES DE ANÁLISIS === */
+/* Analysis sections */
 section {
-    background: #fff;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 80px;
+    margin-bottom: 4rem;
 }
 
-section h2 {
-    font-size: 2rem;
-    color: #007acc;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid #007acc;
-    padding-bottom: 0.5rem;
-}
-
-/* === IFRAME === */
-.site-iframe {
+iframe {
     width: 100%;
-    height: 500px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    height: 450px;
+    border: none;
+    background: #fafafa;
     margin-bottom: 2rem;
 }
 
-/* === TEXTO DE ANÁLISIS EN COLUMNAS === */
+/* Text columns */
 .analysis-text {
     columns: 1;
     column-gap: 2rem;
     margin-bottom: 2rem;
-    text-align: justify;
 }
-
 @media (min-width: 800px) {
-    .analysis-text {
-        columns: 2;
-    }
+    .analysis-text { columns: 2; }
 }
 
-.analysis-text p {
-    margin-bottom: 1rem;
-}
-
-.analysis-text strong {
-    color: #007acc;
-}
-
-.analysis-text ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-}
-
-.analysis-text li {
-    margin-bottom: 0.5rem;
-}
-
-/* === GRID DE SCREENSHOTS === */
+/* Screenshot grid */
 .screenshots {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
 }
-
 .screenshots img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.screenshots img:hover {
+    transform: scale(1.03);
 }
 
-/* === CONCLUSIÓN === */
+/* Conclusion */
 .conclusion {
-    background: #f9f9f9;
+    background: #fafafa;
+    border-left: 4px solid #000;
     padding: 1.5rem;
-    border-left: 4px solid #007acc;
-    border-radius: 5px;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
-.conclusion strong {
-    color: #007acc;
-}
-
-/* === RESPONSIVE === */
+/* Responsive */
 @media (max-width: 768px) {
-    nav {
+    header {
         padding: 1rem;
     }
-
     nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-
-    nav ul li {
-        margin-right: 0;
-    }
-
-    header h1 {
-        padding: 1rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    .site-iframe {
-        height: 300px;
+    .cover {
+        height: 60vh;
     }
 }
