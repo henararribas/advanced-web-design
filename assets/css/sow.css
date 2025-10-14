@@ -1,5 +1,5 @@
 /* ===============================
-   sow.css – SOW specific layout
+   sow.css — SOW specific layout
    =============================== */
 
 /* Header + Sticky nav */
@@ -9,13 +9,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
 }
 
 header .main-title {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 nav ul {
@@ -86,9 +86,7 @@ iframe {
     border-radius: 8px;
     transition: transform 0.3s;
 }
-.screenshots img:hover {
-    transform: scale(1.03);
-}
+
 
 /* Conclusion */
 .conclusion {
