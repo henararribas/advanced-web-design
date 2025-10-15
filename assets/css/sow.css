@@ -4,8 +4,7 @@
 
 /* Header + Sticky nav */
 header {
-    background: #bde1ff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #bde1ffe4;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -25,7 +24,7 @@ nav ul {
 }
 
 nav ul li a {
-    text-transform: lowercase;
+    text-decoration: none;
     color: #062153;
 }
 nav ul li a:hover {
@@ -34,18 +33,22 @@ nav ul li a:hover {
 
 /* Animated cover */
 .cover {
+    background-image: url('https://ik.imagekit.io/wakhrbqy1/Ilustracio%CC%81n_sin_ti%CC%81tulo%20(15).jpg?updatedAt=1760551511325');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #011c3a;
-    color: #bde1ff;
 }
 .cover-title {
     font-size: clamp(2rem, 8vw, 5rem);
     text-transform: uppercase;
+    text-align: center;
     animation: fadeIn 2s ease-in forwards;
     opacity: 0;
+    color: #d0e3ff;
 }
 @keyframes fadeIn {
     to { opacity: 1; }

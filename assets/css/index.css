@@ -38,8 +38,12 @@ p {
   margin-bottom: 1rem; 
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 p strong {
-  color: #1c95ce; 
+  color: #3b94dd; 
 }
 
 /* Links */
@@ -70,8 +74,17 @@ main {
 footer {
     background: #bde1ff;
     color: #03243f;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     margin-top: 1rem;
     font-size: 0.9rem;
+    position: relative;
+}
+
+footer a img {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
 }
