@@ -4,7 +4,7 @@
 
 /* Header + Sticky nav */
 header {
-    background: #fff;
+    background: #bde1ff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -26,7 +26,7 @@ nav ul {
 
 nav ul li a {
     text-transform: lowercase;
-    color: #555;
+    color: #062153;
 }
 nav ul li a:hover {
     color: #000;
@@ -38,8 +38,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000;
-    color: #fff;
+    background: #011c3a;
+    color: #bde1ff;
 }
 .cover-title {
     font-size: clamp(2rem, 8vw, 5rem);
@@ -90,8 +90,8 @@ iframe {
 
 /* Conclusion */
 .conclusion {
-    background: #fafafa;
-    border-left: 4px solid #000;
+    background: #bde1ff;
+    border-left: 4px solid #051150;
     padding: 1.5rem;
     font-size: 0.95rem;
     line-height: 1.7;

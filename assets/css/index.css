@@ -13,22 +13,34 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #fff;
-    color: #333;
+     font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    background-color: #fffef9;
+    color: #0f3c6d;
     line-height: 1.6;
+    
 }
 
 /* Headings and text */
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
-    font-weight: 600;
+font-family: "Merriweather", serif;
+font-optical-sizing: auto;
+font-style: normal;
+line-height: 1.2;
+font-weight: 600;
+color: #0a2855;
 }
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; margin: 2rem 0 1rem; }
 
-p { margin-bottom: 1rem; }
+p { 
+  margin-bottom: 1rem; 
+}
+
+p strong {
+  color: #1c95ce; 
+}
 
 /* Links */
 a {
@@ -56,8 +68,8 @@ main {
 
 /* Footer */
 footer {
-    background: #f5f5f5;
-    color: #666;
+    background: #bde1ff;
+    color: #03243f;
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
