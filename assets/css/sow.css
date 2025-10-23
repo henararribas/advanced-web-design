@@ -1,3 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    background-color: #fffef9;
+    color: #0f3c6d;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #0a2855;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; margin: 2rem 0 1rem; }
+
+p { 
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+p strong {
+    color: #3b94dd; 
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover, a:focus {
+    color: #007acc;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+main {
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+footer {
+    background: #bde1ff;
+    color: #03243f;
+    text-align: left;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer a img {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+}
+
+
 header {
     background: #bde1ffe4;
     position: sticky;
